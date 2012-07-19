@@ -1,0 +1,7 @@
+#!/bin/sh
+# any extra arguments are passed to `git push`, e.g. -f
+
+app='vhx-hubot'
+remote='heroku'
+
+git push $remote master $1 || exit $?
